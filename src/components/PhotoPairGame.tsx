@@ -162,6 +162,16 @@ export default function PhotoPairGame({
           <div key={i} className="w-[11vh] h-[11vh] lg:w-20 lg:h-20" />
         ),
       )}
+      
+      {/* Skip button */}
+      <motion.button
+        className="absolute bottom-8 right-8 px-6 py-2 text-sm font-semibold text-gray-600 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={handleShowProposal}
+      >
+        Skip Game ⏭️
+      </motion.button>
     </div>
   );
 }
